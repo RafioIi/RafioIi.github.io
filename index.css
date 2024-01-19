@@ -111,3 +111,38 @@ div.links {
     top: 0;
     border: 1px solid rgba(255, 255, 255, 1);
 }
+div.fotoik {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+div.fotoik  img {
+    width: 100%;
+    height: 100%;
+}
+div.textik {
+    display: inline-block;
+    padding-inline-start: 65rem;
+}
+p.aboutkopje {
+    border: 1px solid #6919ff;
+    border-radius: 20px;
+    padding: 7px 10px;
+    display: initial;
+    color: #6919ff;
+    font-weight: 600;
+}
+h1.developer {
+    font-size: 40px;
+    padding: 2rem 5px;
+}
+p.abouttext {
+    padding: 0 2px;
+    font-size: 20px;
+    color: rgb(150 161 192)
+}
+
