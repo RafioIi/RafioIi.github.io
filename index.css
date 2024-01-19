@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -24,8 +23,9 @@ a {
     text-decoration: none;
 }
 h1 {
-    font-size: 100px;
-    font-family: 'Climate Crisis', sans-serif;
+    font-size: 7rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900 !important;
 }
 
 body {
@@ -40,11 +40,17 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
+    top: 20px;
+    border-radius: 30px;
+    transition: 1s all;
+}
+
+
+body.scrolled div.navbar {
+    
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(12px);
-    top: 20px;
     border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 30px;
 }
 nav {
     justify-content: space-between;
@@ -76,12 +82,10 @@ div.links {
     display: flex;
     gap: 50px;
 }
-.Rafioli {
-    font-size: 16px;
-    font-weight: 700;
+.Rafioli > img {  
     display: flex;
-    padding: 20px 0px;
-    justify-content: center;
+    max-height: 3rem;
+    
 }
 .top-header {
     position: fixed;
@@ -90,8 +94,8 @@ div.links {
     left: 0;
     background-color: #6919ff;
     background-image: url('img/Cool grid.webp');
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     padding: 24px;
     min-height: 100vh;
     text-align: center;
@@ -123,6 +127,8 @@ div.fotoik {
 div.fotoik  img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 30% 50%;
 }
 div.textik {
     display: inline-block;

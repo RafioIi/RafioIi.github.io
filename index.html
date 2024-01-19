@@ -11,11 +11,11 @@
 <body>
     <div class="navbar">
         <nav>
-            <a href="#" class="Rafioli">RAFIOLI</a>
+            <a href="#" class="Rafioli"><img src="img/unnamed.png" alt="heeft afbeelding niet kunnen laden"></a>
             <div class="links">
                 <a href="#about">ABOUT</a>
-                <a href="#work">WORK</a>
-                <a href="#services">SERVICES</a>
+                <!-- <a href="#work">WORK</a>
+                <a href="#services">SERVICES</a> -->
                 <a href="#contact">CONTACT</a>
             </div>
         </nav>
@@ -35,20 +35,22 @@
     <a id="about">
         <section class="page-section">
             <div class="fotoik">
-                <img src="img/th.jpeg" alt="heeft afbeelding niet kunnen laden">
+                <img src="img/IMG_8073.jpg" alt="heeft afbeelding niet kunnen laden">
             </div>
             <div class="textik">
                 <P class="aboutkopje">ABOUT</P>
                 <h1 class="developer">Developer</h1>
-                <p class="abouttext">Welcome to the digital world! I am Rafioli, a passionate <strong style="color: white;">web developer <br> 
-                    and Roblox scripter </strong> from Tilburg, Netherlands. With a focus on crafting <br> 
-                    dynamic online experiences, I bring <strong style="color: white;">creativity and innovation</strong> to every project. <br> 
+                <p class="abouttext">Welcome to the digital world! I am Rafioli, a passionate <strong
+                        style="color: white;">web developer <br>
+                        and Roblox scripter </strong> from Tilburg, Netherlands. With a focus on crafting <br>
+                    dynamic online experiences, I bring <strong style="color: white;">creativity and innovation</strong>
+                    to every project. <br>
                     Let's collaborate and transform your ideas into captivating virtual realities!
                 </p>
             </div>
         </section>
     </a>
-    <a id="work">
+    <!-- <a id="work">
         <section class="page-section">
             Work
         </section>
@@ -57,12 +59,27 @@
         <section class="page-section">
             Services
         </section>
-    </a>
-    <a id="contact">
-        <section class="page-section">
+    </a> -->
+    <a id="contact">        <section class="page-section">
             Contact
         </section>
     </a>
+
+    <script>
+        window.addEventListener('scroll', () => {
+
+   
+            console.log(window.scrollY);
+            // als body.scrollTop gelijk is aan 0
+            if (window.scrollY == 0) {
+                document.body.classList.remove("scrolled")
+                console.log('bovenaan!');
+            } else {
+                document.body.classList.add("scrolled")
+                console.log('ergens anders!')
+            }
+        })
+    </script>
 </body>
 
 </html>
