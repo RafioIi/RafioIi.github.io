@@ -47,7 +47,7 @@ body {
 
 
 body.scrolled div.navbar {
-    
+
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.4);
@@ -150,24 +150,53 @@ p.abouttext {
     font-size: 20px;
     color: rgb(150 161 192)
 }
-a.contact > section {
+#contact  {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
 }
 p.contactkopje {
     border: 1px solid #6919ff;
     border-radius: 20px;
     padding: 7px 10px;
-    display: initial;
     color: #6919ff;
     font-weight: 600;
+    margin: 0 auto;
+    
+    
 }
 h1.problemsolve {
     font-size: 40px;
-    
+    padding: 2rem 0px;
+    text-align: center;
 }
 p.contacttext {
     font-size: 20px;
-    color: rgb(150 161 192)
+    color: rgb(150 161 192);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+div.contactknopjes  img{
+    border: 1px solid #6919ff;
+    border-radius: 200px;
+    width: 100px;
+    height: 100px;
+    
+}
+div.contactknopjes  {
+    text-align: center;
+    justify-content: space-around;
+}
+div.contactknopjes a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.twitter img {
+    padding: 15px;
+}
+.discord img {
+    padding: 10px;
 }
 
