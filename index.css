@@ -50,7 +50,7 @@ body.scrolled div.navbar {
     
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
 }
 nav {
     justify-content: space-between;
@@ -109,7 +109,7 @@ div.links {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    position: relative;
     color: white;
     height: 100vh;
     top: 0;
@@ -119,14 +119,13 @@ div.fotoik {
     height: 100vh;
     width: 40vw;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     position: absolute;
     left: 0;
 }
 div.fotoik  img {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 2px);
     object-fit: cover;
     object-position: 30% 50%;
 }
@@ -148,6 +147,26 @@ h1.developer {
 }
 p.abouttext {
     padding: 0 2px;
+    font-size: 20px;
+    color: rgb(150 161 192)
+}
+a.contact > section {
+    display: flex;
+    flex-direction: row;
+}
+p.contactkopje {
+    border: 1px solid #6919ff;
+    border-radius: 20px;
+    padding: 7px 10px;
+    display: initial;
+    color: #6919ff;
+    font-weight: 600;
+}
+h1.problemsolve {
+    font-size: 40px;
+    
+}
+p.contacttext {
     font-size: 20px;
     color: rgb(150 161 192)
 }
