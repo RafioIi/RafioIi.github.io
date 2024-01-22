@@ -153,8 +153,9 @@ p.abouttext {
 #contact  {
     display: flex;
     flex-direction: column;
-
+    
 }
+
 p.contactkopje {
     border: 1px solid #6919ff;
     border-radius: 20px;
@@ -168,13 +169,14 @@ p.contactkopje {
 h1.problemsolve {
     font-size: 40px;
     padding: 2rem 0px;
-    text-align: center;
+text-align: center;
 }
+
 p.contacttext {
     font-size: 20px;
     color: rgb(150 161 192);
     padding-bottom: 2rem;
-    text-align: center;
+text-align: center;
 }
 
 div.contactknopjes  img{
@@ -186,7 +188,7 @@ div.contactknopjes  img{
 }
 div.contactknopjes  {
     text-align: center;
-    justify-content: space-around;
+justify-content: space-around;
 }
 div.contactknopjes a {
     display: inline-block;
