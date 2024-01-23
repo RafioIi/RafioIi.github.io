@@ -191,9 +191,9 @@ div.contactknopjes a {
 .hero {
     width: 100%;
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background-color: black;
+    color: white;
 }
 
