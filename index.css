@@ -1,217 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafioli Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(27, 38, 59) ;
-    scroll-behavior: smooth;  
-}
-section {
-    background-color: rgb(27, 38, 59);
-}
-    * {
-    border: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-img {
-    max-width: 100%;
-}
-a {
-    text-decoration: none;
-}
-h1 {
-    font-size: 7rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900 !important;
-}
-body {
-    padding: 100vh 0 0 0;
-}
-/* Containers ETC */
- div.navbar {
-    position: fixed;
-    width: 100%;
-    max-width: 1200px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
-    top: 20px;
-    border-radius: 30px;
-    transition: 1s all;
-}
-body.scrolled div.navbar {
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="#" class="Rafioli"><img src="img/Logo Rafioli.png" alt="heeft afbeelding niet kunnen laden"></a>
+            <div class="links">
+                <a href="#about">ABOUT</a>
+                <!-- <a href="#work">WORK</a>
+                <a href="#services">SERVICES</a> -->
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+    </div>
+    <section class="homepage">
+        <section class="top-header">
 
-    background-color: rgba(0,0,0,0.4);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.4);
-}
-nav {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 16px;
-}
-@media screen and (min-width: 480px) {
-   nav {
-        flex-direction: row;
-   }
-}
-nav a,
-nav > h1 {
-    padding: 15px 8px;
-    color: white;
-    text-decoration: none;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    cursor: pointer;
-}
-div.links {
-    align-items: flex-end;
-    display: flex;
-    gap: 50px;
-}
-.Rafioli > img {  
-    display: flex;
-    max-height: 3rem; 
-}
-.top-header {
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background-color: #6919ff;
-    background-image: url('img/Cool grid.webp');
-    background-position: center;
-    background-size: cover;
-    padding: 24px;
-    min-height: 100vh;
-    text-align: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.page-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    height: 100vh;
-    top: 0;
-    border: 1px solid rgba(255, 255, 255, 1);
-}
-div.fotoik {
-    height: 100vh;
-    width: 40vw;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 0;
-}
-div.fotoik  img {
-    width: 100%;
-    height: calc(100% - 2px);
-    object-fit: cover;
-    object-position: 30% 50%;
-}
-div.textik {
-    display: inline-block;
-    padding-inline-start: 65rem;
-}
-p.aboutkopje {
-    border: 1px solid #6919ff;
-    border-radius: 20px;
-    padding: 7px 10px;
-    display: initial;
-    color: #6919ff;
-    font-weight: 600;
-}
-h1.developer {
-    font-size: 40px;
-    padding: 2rem 5px;
-}
-p.abouttext {
-    padding: 0 2px;
-    font-size: 20px;
-    color: rgb(150 161 192)
-}
-#contact  {
-    display: flex;
-    flex-direction: column;
-    
-}
+            <h1>Roblox Scripter
+                <br>
+                and
+                <br>
+                Web Developer
+            </h1>
+        </section>
+    </section>
 
-p.contactkopje {
-    border: 1px solid #6919ff;
-    border-radius: 20px;
-    padding: 7px 10px;
-    color: #6919ff;
-    font-weight: 600;
-    margin: 0 auto;
-}
-h1.problemsolve {
-    font-size: 40px;
-    padding: 2rem 0px;
-text-align: center;
-}
+    <a id="about">
+        <section class="page-section">
+            <div class="fotoik">
+                <img src="img/Foto van mij.jpg" alt="heeft afbeelding niet kunnen laden">
+            </div>
+            <div class="textik">
+                <P class="aboutkopje">ABOUT</P>
+                <h1 class="developer">Developer</h1>
+                <p class="abouttext">Welcome to the digital world! I am Rafioli, a passionate <strong
+                        style="color: white;">web developer <br>
+                        and Roblox scripter </strong> from Tilburg, Netherlands. With a focus on crafting <br>
+                    dynamic online experiences, I bring <strong style="color: white;">creativity and innovation</strong>
+                    to every project. <br>
+                    Let's collaborate and transform your ideas into captivating virtual realities!
+                </p>
+            </div>
+        </section>
+    </a>
 
-p.contacttext {
-    font-size: 20px;
-    color: rgb(150 161 192);
-    padding-bottom: 2rem;
-text-align: center;
-}
-div.contactknopjes  img{
-    border: 1px solid #6919ff;
-    border-radius: 200px;
-    width: 100px;
-    height: 100px;
-}
-div.contactknopjes  {
-    text-align: center;
-justify-content: space-around;
-}
-div.contactknopjes a {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.twitter img {
-    padding: 15px;
-}
-.discord img {
-    padding: 10px;
-}
-<<<<<<< HEAD
-.hero {
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: white;
-=======
-#contact {
-    z-index: 1;
-    position: relative;
->>>>>>> cd0ac44d8ca67ec26f75160321d3a2b0d42995d4
-}
 
-.contactmij {
-    display: flex;
-}
-.contactmij > div {
-    width: 49%;
-}
-.contactmij > div > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    <!-- <a id="work">
+        <section class="page-section">
+            Work
+        </section>
+    </a>
+    <a id="services">
+        <section class="page-section">
+            Services
+        </section>
+    </a> -->
+    <a id="contact">
+        <section class="page-section">
+            <div class="contactmij">
+                <div>
+                    <p class="contactkopje">CONTACT</p>
+                    <h1 class="problemsolve">Got a problem to solve?</h1>
+                    <p class="contacttext">Hire me for work! Contact me via discord or twitter and let your dream
+                        website or roblox game be reality!</p>
+                    <div class="contactknopjes">
+                        <a class="twitter" href="https://twitter.com/RafioIi"><img src="img/Twitter logo.png"
+                                alt="Couldn't load image"></a>
+                        <a class="discord" href="https://discord.com/users/567747325158752258"><img
+                                src="img/Discord logo.png" alt="Couldn't load image"></a>
+                    </div>
+                </div>
+                <div>
+                    <form action="" class="">
+                        <div class="message-icon">
+                            <i class="telegram"></i>
+                            <span>Message</span>
+                        </div>
+                        <div id="input">
+                            <i class="person"></i>
+                            <input type="text" placeholder="Name" name="Name">
+                        </div>
+                        <div id="input">
+                            <i class="Telephone"></i>
+                            <input type="text" placeholder="Phone No." name="Phone">
+                        </div>
+                        <div id="input">
+                            <i class="envelope"></i>
+                            <input type="text" placeholder="Email adress" name="Email">
+                        </div>
+                        <div id="input">
+                            <i class="chat right"></i>
+                            <textarea name="Message" placeholder="Message" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="send btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </a>
+    <script>
+        window.addEventListener('scroll', () => {
+
+
+            console.log(window.scrollY);
+            // als body.scrollTop gelijk is aan 0
+            if (window.scrollY == 0) {
+                document.body.classList.remove("scrolled")
+                console.log('bovenaan!');
+            } else {
+                document.body.classList.add("scrolled")
+                console.log('ergens anders!')
+            }
+        })
+    </script>
+</body>
+
+</html>
