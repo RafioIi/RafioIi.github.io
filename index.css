@@ -188,6 +188,7 @@ div.contactknopjes a {
 .discord img {
     padding: 10px;
 }
+<<<<<<< HEAD
 .hero {
     width: 100%;
     height: 100vh;
@@ -195,5 +196,22 @@ div.contactknopjes a {
     justify-content: center;
     background-color: black;
     color: white;
+=======
+#contact {
+    z-index: 1;
+    position: relative;
+>>>>>>> cd0ac44d8ca67ec26f75160321d3a2b0d42995d4
 }
 
+.contactmij {
+    display: flex;
+}
+.contactmij > div {
+    width: 49%;
+}
+.contactmij > div > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
