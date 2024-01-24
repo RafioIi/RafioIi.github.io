@@ -28,6 +28,7 @@ h1 {
 }
 body {
     padding: 100vh 0 0 0;
+    overflow-x: hidden;
 }
 /* Containers ETC */
  div.navbar {
@@ -104,7 +105,11 @@ div.links {
     color: white;
     height: 100vh;
     top: 0;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+#about .page-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 div.fotoik {
     height: 100vh;
@@ -192,7 +197,7 @@ div.contactknopjes a {
     padding: 10px;
 }
 
-#contact {
+#contact  {
     z-index: 1;
     position: relative;
 }
@@ -242,15 +247,13 @@ form > span {
     position: absolute;
     height: 45vh;
     width: 100vw;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-top: none;
-    border-bottom: none;
+
 }
 footer {
     height: 45vh;
-    position: relative;
-    z-index: 1;
     max-width: 100vw;
+    width: 100vw;
+    left: 0px;
    
 }
 div.logoeind {
@@ -322,4 +325,8 @@ a.discordeind img {
 }
 a.github img {
     height: calc(3rem + 10px);
+}
+footer {
+    width: 100%;
+    max-width: 10100vw;
 }
