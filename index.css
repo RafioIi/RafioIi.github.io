@@ -104,7 +104,7 @@ div.links {
     color: white;
     height: 100vh;
     top: 0;
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 div.fotoik {
     height: 100vh;
@@ -167,6 +167,7 @@ p.contacttext {
     font-size: 20px;
     color: rgb(150 161 192);
     padding-bottom: 1rem;
+    padding-left: 2px;
 
 }
 div.contactknopjes  img{
@@ -213,7 +214,9 @@ form input, textarea {
     width: 40rem;
     height: 3rem;
     background-color: rgb(27, 38, 59);
-    border: 1px solid rgba(255, 255, 255, 0.5)
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    
 }
 .message textarea {
     height: 5rem;
@@ -234,4 +237,89 @@ form > span {
 }
 .message  {
     padding-bottom: 2rem;
+}
+#Matrix {
+    position: absolute;
+    height: 45vh;
+    width: 100vw;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: none;
+    border-bottom: none;
+}
+footer {
+    height: 45vh;
+    position: relative;
+    z-index: 1;
+    max-width: 100vw;
+   
+}
+div.logoeind {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh; 
+    width: 80vw;
+    left: 10vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    
+}
+div.logoeind img {
+    height: 6vh;
+}
+div.linkjeseind {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    padding: 30px 0;
+    left: 10vw;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+footer a, p {
+    color: white;
+    padding: 0 20px;
+}
+
+div.laatstestuf {
+    z-index: 1;
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+    height: calc(12vh - 2px);
+
+}
+div.laatstestuf > p {
+    position: absolute;
+    width: 80vw;
+    bottom: 20px;
+}
+div.knopjeseind   {
+    z-index: 2;
+    width: 80vw;
+    left: 10vw;
+    height: 3rem;
+    padding-top: 2rem;
+    position: relative;
+    text-align: center;
+    
+}
+div.knopjeseind  img {
+    height: 3rem;
+}
+div.laatstestuf  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+}
+a.discordeind img {
+    height: calc(3rem + 5px);
+}
+a.github img {
+    height: calc(3rem + 10px);
 }

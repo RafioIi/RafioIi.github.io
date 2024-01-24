@@ -51,7 +51,6 @@
         </section>
     </a>
 
-
     <!-- <a id="work">
         <section class="page-section">
             Work
@@ -100,23 +99,30 @@
                     </form>
                 </div>
             </div>
+
         </section>
     </a>
-    <script>
-        window.addEventListener('scroll', () => {
-
-
-            console.log(window.scrollY);
-            // als body.scrollTop gelijk is aan 0
-            if (window.scrollY == 0) {
-                document.body.classList.remove("scrolled")
-                console.log('bovenaan!');
-            } else {
-                document.body.classList.add("scrolled")
-                console.log('ergens anders!')
-            }
-        })
-    </script>
+    <footer>
+        <canvas id="Matrix"></canvas>
+        <script src="./index.js"></script>
+        <div class="logoeind">
+            <img src="img/Logo Rafioli.png" alt="fsdf">
+        </div>
+        <div class="linkjeseind">
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#sevices">SERVICES</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <div class="knopjeseind">
+            <a href="https://twitter.com/RafioIi"><img src="img/Twitter logo.png" alt="fd"></a>
+           <a class="discordeind" href="https://discord.com/users/567747325158752258"><img src="img/Discord logo.png" alt="fd"></a>
+           <a class="github" href="https://github.com/RafioIi"><img src="img/downloads-removebg-preview.png" alt="fd"></a>
+        </div>
+        <div class="laatstestuf">
+           <p>© 2024 Rafioli</p> 
+        </div>
+    </footer>
 </body>
 
 </html>
